@@ -19,7 +19,7 @@ on:
 
 name: Build and Deploy to Cloud Run
 env:
-  GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
+  PROJECT_ID: ${{ secrets.GCP_PROJECT }}
   SERVICE: ml-api
   REGION: us-central1
   BASIC_AUTH_USERNAME: ${{ secrets.BASIC_AUTH_USERNAME }}
