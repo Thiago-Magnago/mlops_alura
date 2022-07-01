@@ -29,7 +29,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    # Add "id-token" with the intended permissions.
+    # Add "id-token" with the intended permissions
     permissions:
       contents: 'read'
       id-token: 'write'
@@ -38,7 +38,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    # Configure Workload Identity Federation and generate an access token.
+    # Configure Workload Identity Federation and generate an access token
     #- id: 'auth'
     #  name: 'Authenticate to Google Cloud'
     #  uses: 'google-github-actions/auth@v0'
