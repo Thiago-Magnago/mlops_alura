@@ -50,4 +50,6 @@ def cotacao():
 #Para o script rodar essa aplicação
 #com debug=True, alterações aqui restartam a execução no terminal automaticamente
 #com host=0.0.0.0, trata o fato de fazermos o deploy em vários ambientes: Docker, App Engine, local.
-app.run(debug=True, host='0.0.0.0')
+
+#Para garantir q essa parte só seja executada quando for executado como source
+if __name__ == '__main__': app.run(debug=True, host='0.0.0.0')
